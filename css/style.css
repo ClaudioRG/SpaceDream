@@ -263,6 +263,7 @@ button.accordion.active:after {
   display: none;
   background-color: rgb(85, 136, 177);
   overflow: hidden;
+  font-size: 120%;
 }
 
 /*MAPA Y CONTACTO*/
