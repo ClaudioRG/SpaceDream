@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SpaceDream</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+   <div id="wrapper">
+        <nav>
+            <div class="topnav" id="myTopnav">
+                <a href="#inicio" class="active"><i class="fa fa-rocket"></i></a>
+                <a href="#presentacion">¿Qué es?</a>
+                <a href="#parallax">Viaja</a>
+                <a href="#galeria">Galería</a>
+                <a href="#lunapark">Luna Park</a>  
+                <a href="#preguntas">FAQ</a> 
+                <a href="#contacto">Contacto</a>
+                <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+              </div>
+              
+        </nav>
+       
+        <header id="inicio">
+            <div class="texto-hero">
+              <h1><i>SpaceDream</i></h1>
+              <a href="#presentacion"><i class="fa fa-arrow-down" aria-hidden="true"></i></a>
+            </div>
+        </header>       
+        
+        <section id="presentacion">
+            <div class="titulo-seccion">
+              <h2>¿Qué es <i>Space Dream</i>?</h2>
+              <p><i>Sientete como Yuri, sientete SpaceDream</i></p>
+            </div>
+            <!--  MITADES -->
+            <div class="mitad" id="izda">
+               <img src="img/cohete.png" alt="Imagen de cohete espacial">
+            </div>
+            <div class="mitad" id="dcha">
+             <p>Deja de ir a la playa de vacaciones, y ¡ven al espacio! <b>SpaceDream</b> es un <i>sueño</i> hecho <i>realidad</i>. Hemos desarrollado la última gama de naves "Apolo" basándonos en las nuevas tecnologías de la NASA para alcanzar una mayor velocidad y así hacer el viaje lo más corto y cómodo posible. Deja de mirar a la luna, y <b>duerme en ella</b>, deja de mirar las estrellas y <b>alcánzalas</b>. <hr><i>Sientete como Yuri, sientete SpaceDream</i></p>
+            </div>
+            <!-- ROMPER EL FLOAT CON DIV VACÍO-->
+            <div class="final"></div>
+        </section>
+        <!--PARALLAX 1-->
+        <section id="parallax" class="parallax">
+          <p>Gracias al nuevo programa de <i>excursiones planetarias</i>, con <b>Space Dream</b> es posible disfutar de pura diversión en el <i>parque acuático</i> de <b>Marte</b>, <i>el parque de atracciones </i>lunar <b>Luna Park</b>, o incluso podremos acceder al interior de la ¡<b>Estación Espacial Internacional</b>!</p>
+        </section>
+         <!-- SECCIÓN GALERÍA CON SLIDER O CAROUSEL-->
+        <section id="galeria">
+          <div class="titulo-seccion">
+            <h2>Galería</h2>
+            <p>Imágenes de algunos de los muchos paisajes avistados con <b>SpaceDream</b></p>
+          </div>
+    <!-- SLIDESHOW -->
+          <!-- Container for the image gallery -->
+  <div class="container">
+
+    <!-- Full-width images with number text -->
+  <div class="mySlides">
+    <div class="numbertext">1 / 4</div>
+      <img src="img/vialactea.jpg" style="width:100%;">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 4</div>
+      <img src="img/pluton.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 4</div>
+      <img src="img/latierra.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">4 / 4</div>
+      <img src="img/eei.jpg" style="width:100%">
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  <!-- Image text -->
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <!-- Thumbnail images -->
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="img/vialactea.jpg" style="width:100%" onclick="currentSlide(1)" alt="Vía Láctea">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/pluton.jpg" style="width:100%" onclick="currentSlide(2)" alt="Plutón">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/latierra.jpg" style="width:100%" onclick="currentSlide(3)" alt="Nuestro hogar desde otra perspectiva">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/eei.jpg" style="width:100%" onclick="currentSlide(4)" alt="Estación Espacial Internacional">
+    </div>
+  </div>
+</div>
+
+<section id="lunapark">
+    <div class="titulo-seccion">
+        <h2>Luna Park</h2>
+        <p>Gracias a tanto avance tecnólogico, el pasado año 2048 se consiguió terminar el parque de atracciones <b>Luna Park</b> y con nuestro programa de <i>excursiones planetarias</i>, ya es posible divertirnos ¡¡a lo Neil Armstrong!!.</p>
+      </div>
+  <div class="ba-slider">
+    <img src="img/slider2.jpg" alt="">       
+    <div class="resize">
+      <img src="img/SLIDER1.jpeg" alt="">
+    </div>
+    <span class="handle"></span>
+  </div>
+</section>
+  <!--PARALLAX 2-->
+<section class="sec-parallax">
+  <br><br><br><br><br><br><br><br><br><br><br><br>
+</section>
+        <!-- FAQ -->
+        <section id="preguntas">
+          <div class="titulo-seccion">
+            <h2>Preguntas frecuentes</h2>
+            <p>Dudas Interplanetarias</p>
+          </div>
+
+          <button class="accordion">¿Es seguro viajar al espacio?</button>
+          <div class="panel">
+            <p>Sin duda alguna, es la pregunta más planteada, y la respuesta más sencilla: SÍ. 
+              El transporte espacial es el medio de transporte más seguro que existe, y, además, en <b>SpaceDream</b> somos Eco-Friendly, utilizamos un combustible basado en abono de Vaca Lunar, el combustible menos contaminante y más duradero que existe hata la época.
+            </p>
+          </div>
+
+          <button class="accordion">¿Es caro?</button>
+          <div class="panel">
+            <p><b>NO </b>¡PARA NADA!<br><b>SpaceDream</b> es una empresa líder en Calidad/Precio a lo que <i>turismo espacial</i> se refiere. Si quieres recibir los presupuestos puedes mandarnos un correo a <b>presupuestos@spacedream.com</b></p>
+          </div>
+
+          <button class="accordion">¿Tengo que llevar abrigo?</button>
+          <div class="panel">
+            <p>Obviamente no hace la misma temperatura en todos los planetas, por lo que ¡lo mejor es ir bien preparado!.<br> Igualmente, en <b>SpaceDream</b> proporcionamos todo tipo de comodidades a un precio realmente asequible.</p>
+          </div>
+
+          <button class="accordion">¿Hay playa?</button>
+          <div class="panel">
+            <p>Lamentamos responder que no a esa pregunta, debido a que los mares fuera del planeta "Tierra" son parajes naturales protegidos. De todas maneras, en el <i>hotel espacial</i> poseemos piscina climatizada y una barra para disfrutar de un día de relax en un entorno .</p>
+          </div>
+
+        </section>
+        <!-- CONTACTO (MITADES) -->
+        <section id="contacto">
+          <div class="titulo-seccion">
+            <h2>Contacto</h2>
+            <p>Para cualquier información, contacta con nosotros</p>
+          </div>
+          <div class="mitad" id="mapa">
+            <iframe id="mimapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1728.4247038475276!2d-117.17349796681374!3d32.674351073355204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d9532b7a6d68ff%3A0xd2352f9c0e1169fc!2sAvenida%20Lunar%2C%20Coronado%2C%20CA%2092118%2C%20EE.%20UU.!5e0!3m2!1ses!2ses!4v1583181156069!5m2!1ses!2ses"frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+          </div>
+          <div class="mitad" id="info">
+            <dl>
+              <dt><i class="fa fa-map-marker" aria-hidden="true"></i> Dirección:</dt>
+              <dd>Avenida Lunar, Coronado<br>
+                  92118 - California</dd>
+              <dt><i class="fa fa-phone" aria-hidden="true"></i> Teléfono:</dt>
+              <dd>+34 657 634 723</dd>
+              <dt><i class="fa fa-fax" aria-hidden="true"></i> Fax:</dt>
+              <dd>745 647 643</dd>
+              <dt><i class="fa fa-envelope" aria-hidden="true"></i> E-mail:</dt>
+              <dd>contacto@spacedream</dd>
+            </dl>
+          </div>
+          <div class="final"></div>
+        </section>
+        <footer>
+          <p><i class="fa fa-copyright" aria-hidden="true"></i> Página Web creada por: Claudio Reina Gómez <br>En Marzo de 2020</p>
+        </footer>
+   </div>
+   <script>
+       var slideIndex = 1;
+       showSlides(slideIndex);
+       /*ACCORDION */
+
+       var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+
+   </script>
+</body>
+</html>
